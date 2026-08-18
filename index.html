@@ -1,49 +1,1148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>DOURAM DIGITAL LAW | Droit numérique & technologies émergentes</title>
-<meta name="description" content="DOURAM DIGITAL LAW — recherche, formation et veille sur le droit numérique, la blockchain, les actifs numériques, le Web3, la cybersécurité et l'informatique quantique.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DOURAM DIGITAL LAW | Droit numérique, Blockchain & Technologies</title>
+
+<meta name="description"
+content="DOURAM DIGITAL LAW – plateforme de recherche, de formation et de veille consacrée au droit numérique, à la blockchain, aux actifs numériques, au Web3, à la cybersécurité et aux technologies émergentes.">
+
 <meta name="theme-color" content="#07111f">
-<meta property="og:title" content="DOURAM DIGITAL LAW"><meta property="og:description" content="Droit numérique, Blockchain, Actifs numériques, Web3 et Informatique quantique."><meta property="og:type" content="website">
+
 <style>
-:root{--ink:#07111f;--muted:#667386;--line:#dfe5ec;--bg:#f5f7fa;--card:#fff;--a:#11b5a4;--dark:#07111f;--max:1180px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}a{color:inherit}button,input,textarea,select{font:inherit}
-.nav{position:sticky;top:0;z-index:20;background:#fffffff2;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.navin{max-width:var(--max);height:76px;margin:auto;padding:0 22px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:10px;align-items:center;text-decoration:none;font-weight:900;font-size:14px;letter-spacing:.04em}.mark{width:38px;height:38px;border-radius:11px;background:var(--dark);color:#fff;display:grid;place-items:center;font-size:11px}.links{display:flex;gap:25px}.links a{text-decoration:none;font-size:14px;font-weight:700}.menu{display:none;border:0;background:none;font-size:25px}
-.hero{background:linear-gradient(135deg,#fff,#e9f5f3);border-bottom:1px solid var(--line)}.heroin{max-width:var(--max);margin:auto;padding:90px 22px 80px;display:grid;grid-template-columns:1.35fr .65fr;gap:55px;align-items:center}.ey{font-size:11px;font-weight:900;letter-spacing:.19em;color:var(--a);margin:0 0 14px}.hero h1{font-size:clamp(43px,7vw,78px);line-height:1.01;letter-spacing:-.055em;margin:0}.hero h1 span{color:var(--a)}.lead{font-size:19px;color:var(--muted);max-width:720px;margin:25px 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;padding:13px 19px;border-radius:11px;text-decoration:none;font-weight:800;border:1px solid var(--line);cursor:pointer}.primary{background:var(--dark);color:#fff;border-color:var(--dark)}.hero-panel{min-height:370px;border-radius:28px;background:var(--dark);color:#fff;padding:36px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:end;box-shadow:0 30px 70px #07111f2e}.glow{position:absolute;width:280px;height:280px;border-radius:50%;right:-70px;top:-80px;background:radial-gradient(circle,#9ff7e8,#11b5a4 30%,transparent 68%)}.hero-panel strong{font-size:31px;line-height:1.08}.hero-panel small{color:#aebac8;margin-top:16px}
-.band{background:#fff;border-bottom:1px solid var(--line)}.bandin{max-width:var(--max);margin:auto;display:grid;grid-template-columns:repeat(3,1fr)}.metric{padding:24px 22px;border-right:1px solid var(--line)}.metric:last-child{border:0}.metric b{display:block;font-size:22px}.metric span{font-size:13px;color:var(--muted)}
-.section{max-width:var(--max);margin:auto;padding:92px 22px}.section h2{font-size:45px;line-height:1.08;letter-spacing:-.045em;margin:0 0 38px}.sub{color:var(--muted);max-width:760px;margin-top:-22px;margin-bottom:36px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px}.card.full{grid-column:1/-1}.ico{font-size:27px;margin-bottom:17px}.card h3{font-size:23px;margin:0 0 7px}.card p{color:var(--muted)}.card a{font-weight:850;text-decoration:none}
-.dark{max-width:none;background:var(--dark);color:#fff}.darkin{max-width:var(--max);margin:auto;padding:92px 22px}.dark .sub{color:#aebac8}.pubs{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.pub{border:1px solid #ffffff20;border-radius:18px;padding:28px;min-height:245px}.pub label{font-size:10px;letter-spacing:.15em;color:#74e8d7;font-weight:850}.pub h3{font-size:22px;line-height:1.25}.pub p{color:#aebac8}
-.program{display:grid;grid-template-columns:1fr 1fr;gap:20px}.program>div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:34px}.program h3{font-size:31px;line-height:1.15}.program li{margin:10px 0}.about,.contact{display:grid;grid-template-columns:1fr 1fr;gap:70px}.about p,.contact p{color:var(--muted);font-size:17px}
-form{display:grid;gap:12px}input,textarea,select{width:100%;padding:14px;border:1px solid var(--line);border-radius:11px;background:#fff}input:focus,textarea:focus,select:focus{outline:2px solid #11b5a433;border-color:var(--a)}.status{font-size:13px;color:var(--a);min-height:20px}
-footer{background:#040a12;color:#9eabba}.footin{max-width:var(--max);margin:auto;padding:42px 22px;display:flex;justify-content:space-between;gap:25px}.footlinks{display:flex;gap:20px;font-size:13px}.footlinks a{text-decoration:none;color:#dfe6ee}
-@media(max-width:800px){.links{display:none}.links.open{display:flex;position:absolute;left:0;right:0;top:76px;background:#fff;padding:20px 22px;flex-direction:column;border-bottom:1px solid var(--line)}.menu{display:block}.heroin,.cards,.pubs,.program,.about,.contact{grid-template-columns:1fr}.card.full{grid-column:auto}.hero-panel{min-height:300px}.bandin{grid-template-columns:1fr}.metric{border-right:0;border-bottom:1px solid var(--line)}.section,.darkin{padding-top:70px;padding-bottom:70px}.section h2{font-size:37px}.footin{flex-direction:column}}
+:root{
+  --navy:#07111f;
+  --navy2:#0b1728;
+  --ink:#0c1726;
+  --teal:#16b5a5;
+  --teal2:#55d8ca;
+  --white:#ffffff;
+  --soft:#f4f7f9;
+  --line:#dce5ea;
+  --muted:#647284;
+  --gold:#c9a45c;
+  --shadow:0 20px 60px rgba(7,17,31,.12);
+  --radius:24px;
+  --max:1180px;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  background:var(--soft);
+  color:var(--ink);
+  line-height:1.7;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+.nav{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(7,17,31,.96);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav-inner{
+  min-height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  color:#fff;
+  font-weight:800;
+  letter-spacing:.5px;
+}
+
+.logo{
+  width:44px;
+  height:44px;
+  border-radius:13px;
+  background:linear-gradient(135deg,var(--teal),#0d7f76);
+  display:grid;
+  place-items:center;
+  color:#fff;
+  font-weight:900;
+  font-size:15px;
+  box-shadow:0 10px 30px rgba(22,181,165,.25);
+}
+
+.links{
+  display:flex;
+  align-items:center;
+  gap:26px;
+  color:#dce6ee;
+  font-size:14px;
+  font-weight:600;
+}
+
+.links a{
+  transition:.25s;
+}
+
+.links a:hover{
+  color:var(--teal2);
+}
+
+.menu{
+  display:none;
+  border:0;
+  background:none;
+  color:#fff;
+  font-size:30px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  background:
+    radial-gradient(circle at 80% 20%,rgba(22,181,165,.20),transparent 30%),
+    linear-gradient(135deg,#07111f 0%,#0b1728 55%,#0d2330 100%);
+  color:#fff;
+  padding:100px 0 90px;
+  overflow:hidden;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  align-items:center;
+  gap:70px;
+}
+
+.eyebrow{
+  color:var(--teal2);
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:13px;
+  font-weight:800;
+  margin-bottom:22px;
+}
+
+.hero h1{
+  font-size:clamp(44px,6vw,78px);
+  line-height:1.02;
+  letter-spacing:-3px;
+  margin-bottom:28px;
+}
+
+.hero h1 span{
+  color:var(--teal2);
+}
+
+.hero-text{
+  color:#b9c7d5;
+  font-size:19px;
+  max-width:690px;
+  margin-bottom:35px;
+}
+
+.actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:54px;
+  padding:0 25px;
+  border-radius:14px;
+  font-weight:800;
+  transition:.25s;
+}
+
+.btn-primary{
+  background:var(--teal);
+  color:#031510;
+}
+
+.btn-primary:hover{
+  transform:translateY(-3px);
+  box-shadow:0 15px 35px rgba(22,181,165,.25);
+}
+
+.btn-outline{
+  border:1px solid rgba(255,255,255,.2);
+  color:#fff;
+  background:rgba(255,255,255,.04);
+}
+
+.btn-outline:hover{
+  background:rgba(255,255,255,.09);
+}
+
+/* ================= HERO PANEL ================= */
+
+.hero-panel{
+  min-height:390px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:30px;
+  background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+  padding:35px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 30px 80px rgba(0,0,0,.25);
+}
+
+.hero-panel:before{
+  content:"";
+  position:absolute;
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  background:rgba(22,181,165,.20);
+  filter:blur(50px);
+  right:-80px;
+  top:-80px;
+}
+
+.network{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin:45px 0;
+}
+
+.node{
+  min-height:75px;
+  border:1px solid rgba(85,216,202,.22);
+  border-radius:16px;
+  display:grid;
+  place-items:center;
+  color:var(--teal2);
+  font-weight:800;
+  background:rgba(22,181,165,.05);
+}
+
+.panel-title{
+  position:relative;
+  z-index:2;
+  color:#fff;
+  font-size:26px;
+}
+
+.panel-small{
+  position:relative;
+  z-index:2;
+  color:#aebdca;
+  margin-top:8px;
+}
+
+/* ================= STRATEGIC BAND ================= */
+
+.band{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+
+.band-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+}
+
+.metric{
+  padding:28px 18px;
+  text-align:center;
+  border-right:1px solid var(--line);
+}
+
+.metric:last-child{
+  border-right:0;
+}
+
+.metric strong{
+  display:block;
+  font-size:28px;
+  color:var(--navy);
+}
+
+.metric span{
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* ================= SECTIONS ================= */
+
+.section{
+  padding:100px 0;
+}
+
+.section-head{
+  max-width:760px;
+  margin-bottom:50px;
+}
+
+.section-kicker{
+  color:#079c8e;
+  text-transform:uppercase;
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:900;
+  margin-bottom:12px;
+}
+
+.section h2{
+  font-size:clamp(34px,4vw,54px);
+  line-height:1.08;
+  letter-spacing:-2px;
+  margin-bottom:18px;
+}
+
+.section-intro{
+  color:var(--muted);
+  font-size:18px;
+}
+
+/* ================= DOMAIN CARDS ================= */
+
+.domain-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.domain-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:30px;
+  box-shadow:0 10px 30px rgba(7,17,31,.04);
+  transition:.3s;
+}
+
+.domain-card:hover{
+  transform:translateY(-7px);
+  box-shadow:var(--shadow);
+}
+
+.icon{
+  width:54px;
+  height:54px;
+  border-radius:15px;
+  background:#e7f8f5;
+  color:#078f82;
+  display:grid;
+  place-items:center;
+  font-size:24px;
+  margin-bottom:22px;
+}
+
+.domain-card h3{
+  font-size:21px;
+  margin-bottom:10px;
+}
+
+.domain-card p{
+  color:var(--muted);
+  font-size:15px;
+}
+
+/* ================= PUBLICATIONS ================= */
+
+.publications{
+  background:var(--navy);
+  color:#fff;
+}
+
+.publications .section-intro{
+  color:#aebdca;
+}
+
+.pub-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:28px;
+}
+
+.pub-card{
+  background:#0c1b2d;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:26px;
+  overflow:hidden;
+  transition:.3s;
+}
+
+.pub-card:hover{
+  transform:translateY(-6px);
+  border-color:rgba(85,216,202,.35);
+}
+
+.pub-image{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  background:#102438;
+}
+
+.pub-body{
+  padding:30px;
+}
+
+.tag{
+  color:var(--teal2);
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:11px;
+  font-weight:900;
+  margin-bottom:12px;
+}
+
+.pub-card h3{
+  font-size:26px;
+  line-height:1.2;
+  margin-bottom:14px;
+}
+
+.pub-card p{
+  color:#aebdca;
+  margin-bottom:24px;
+}
+
+.read{
+  color:var(--teal2);
+  font-weight:800;
+}
+
+/* ================= RESEARCH ================= */
+
+.research-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.research-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:35px;
+}
+
+.research-card h3{
+  margin-bottom:12px;
+  font-size:23px;
+}
+
+.research-card p{
+  color:var(--muted);
+}
+
+/* ================= PROFILE ================= */
+
+.profile{
+  background:#edf4f5;
+}
+
+.profile-grid{
+  display:grid;
+  grid-template-columns:.7fr 1.3fr;
+  gap:60px;
+  align-items:center;
+}
+
+.profile-box{
+  background:var(--navy);
+  color:#fff;
+  border-radius:30px;
+  padding:40px;
+  box-shadow:var(--shadow);
+}
+
+.profile-initial{
+  width:90px;
+  height:90px;
+  border-radius:24px;
+  background:var(--teal);
+  color:#061713;
+  display:grid;
+  place-items:center;
+  font-size:28px;
+  font-weight:900;
+  margin-bottom:25px;
+}
+
+.profile-box h3{
+  font-size:27px;
+  margin-bottom:8px;
+}
+
+.profile-box p{
+  color:#b7c5d1;
+}
+
+.profile-text h2{
+  margin-bottom:20px;
+}
+
+.profile-text p{
+  color:var(--muted);
+  margin-bottom:18px;
+}
+
+/* ================= CTA ================= */
+
+.cta{
+  padding:90px 0;
+  background:linear-gradient(135deg,#0b2630,#07111f);
+  color:#fff;
+}
+
+.cta-box{
+  text-align:center;
+  max-width:850px;
+  margin:auto;
+}
+
+.cta h2{
+  font-size:clamp(35px,5vw,58px);
+  line-height:1.1;
+  margin-bottom:20px;
+}
+
+.cta p{
+  color:#b7c5d1;
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+  background:#040b14;
+  color:#aebdca;
+  padding:55px 0 25px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr;
+  gap:40px;
+  margin-bottom:45px;
+}
+
+.footer h3{
+  color:#fff;
+  margin-bottom:15px;
+}
+
+.footer p{
+  font-size:14px;
+}
+
+.footer a{
+  display:block;
+  margin:7px 0;
+  font-size:14px;
+}
+
+.footer a:hover{
+  color:var(--teal2);
+}
+
+.copyright{
+  border-top:1px solid rgba(255,255,255,.08);
+  padding-top:22px;
+  font-size:13px;
+  text-align:center;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+  .links{
+    display:none;
+    position:absolute;
+    left:4%;
+    right:4%;
+    top:78px;
+    padding:22px;
+    background:#07111f;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:18px;
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .links.open{
+    display:flex;
+  }
+
+  .menu{
+    display:block;
+  }
+
+  .hero-grid,
+  .profile-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding-top:70px;
+  }
+
+  .domain-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .band-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .metric{
+    border-bottom:1px solid var(--line);
+  }
+
+  .pub-grid,
+  .research-grid{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:600px){
+
+  .hero h1{
+    font-size:45px;
+    letter-spacing:-2px;
+  }
+
+  .hero-text{
+    font-size:17px;
+  }
+
+  .domain-grid{
+    grid-template-columns:1fr;
+  }
+
+  .network{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .section{
+    padding:70px 0;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .band-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
 </style>
 </head>
+
 <body>
-<header class="nav"><div class="navin"><a class="brand" href="#accueil"><span class="mark">DD</span>DOURAM DIGITAL LAW</a><button class="menu" aria-label="Menu">☰</button><nav class="links"><a href="#domaines">Domaines</a><a href="#publications">Publications</a><a href="#formations">Formations</a><a href="#apropos">À propos</a><a href="#contact">Contact</a></nav></div></header>
-<main>
-<section id="accueil" class="hero"><div class="heroin"><div><p class="ey">DROIT • TECHNOLOGIE • INNOVATION</p><h1>Le droit face aux <span>technologies émergentes.</span></h1><p class="lead">Une plateforme de recherche, de formation et de veille consacrée au droit numérique, à la Blockchain, aux actifs numériques, au Web3 et à l'informatique quantique.</p><div class="actions"><a class="btn primary" href="#publications">Explorer les publications</a><a class="btn" href="#contact">Proposer une collaboration</a></div></div><div class="hero-panel"><div class="glow"></div><p class="ey">OBSERVATOIRE</p><strong>Digital Law<br>& Emerging Tech</strong><small>Cameroun • Afrique • OHADA • Monde</small></div></div></section>
-<section class="band"><div class="bandin"><div class="metric"><b>05</b><span>axes stratégiques</span></div><div class="metric"><b>RECHERCHE</b><span>doctrine, analyse et prospective</span></div><div class="metric"><b>AFRIQUE</b><span>ancrage camerounais et OHADA</span></div></div></section>
-<section id="domaines" class="section"><p class="ey">DOMAINES</p><h2>Les technologies qui redessinent le droit.</h2><p class="sub">Une approche croisée entre sciences juridiques, gouvernance technologique, économie numérique et souveraineté.</p><div class="cards">
-<article class="card"><div class="ico">⚖️</div><h3>Droit numérique</h3><p>Contrats électroniques, données, preuve numérique, cybersécurité, responsabilité, plateformes et gouvernance.</p><a href="#droit-numerique">Explorer →</a></article>
-<article class="card"><div class="ico">⛓️</div><h3>Blockchain</h3><p>Registres distribués, smart contracts, tokenisation, gouvernance et applications juridiques.</p><a href="blockchain-ohada.html">Explorer →</a></article>
-<article class="card"><div class="ico">◈</div><h3>Actifs numériques</h3><p>Crypto-actifs, stablecoins, tokenisation, conformité, fiscalité et souveraineté monétaire.</p><a href="#actifs-numerique">Explorer →</a></article>
-<article class="card"><div class="ico">🌐</div><h3>Web3</h3><p>DAO, identité décentralisée, propriété numérique, plateformes et nouveaux modèles de confiance.</p><a href="#web3">Explorer →</a></article>
-<article class="card full"><div class="ico">⚛️</div><h3>Informatique quantique</h3><p>Cryptographie post-quantique, sécurité des infrastructures, souveraineté technologique et conséquences juridiques de la rupture quantique.</p><a href="#informatique-quantique">Explorer →</a></article>
-</div></section>
-<section id="publications" class="dark"><div class="darkin"><p class="ey">RECHERCHE & PUBLICATIONS</p><h2>Décrypter les transformations avant qu'elles ne deviennent des normes.</h2><p class="sub">Analyses, articles scientifiques, commentaires et travaux prospectifs sur les technologies émergentes.</p><div class="pubs">
-<article class="pub"><label>DROIT NUMÉRIQUE • OHADA</label><h3>Blockchain et sécurisation des registres de commerce dans l'espace OHADA</h3><p>Recherche juridique et prospective sur les registres distribués.</p></article>
-<article class="pub"><label>ACTIFS NUMÉRIQUES • AFRIQUE</label><h3>Crypto-actifs et souveraineté monétaire africaine</h3><p>Enjeux juridiques, économiques et réglementaires.</p></article>
-<article class="pub"><label>QUANTIQUE • CYBERSÉCURITÉ</label><h3>Cryptographie post-quantique et droit de la cybersécurité</h3><p>Un nouveau chantier pour les juristes et les régulateurs.</p></article>
-</div></div></section>
-<section id="formations" class="section"><p class="ey">FORMATION</p><h2>Former les juristes de la transformation numérique.</h2><div class="program"><div><h3>Droit numérique, Blockchain & Web3</h3><p class="sub">Un parcours progressif destiné aux étudiants, juristes, enseignants, chercheurs et professionnels.</p></div><div><ul><li>Fondamentaux du droit numérique</li><li>Blockchain et smart contracts</li><li>Crypto-actifs et réglementation</li><li>Web3, DAO et identité numérique</li><li>Cybersécurité et cryptographie</li><li>Introduction au droit de l'informatique quantique</li></ul></div></div></section>
-<section id="apropos" class="section about"><div><p class="ey">À PROPOS</p><h2>Une plateforme juridique tournée vers l'avenir.</h2></div><div><p><strong>DOURAM DIGITAL LAW</strong> a vocation à constituer un espace de référence consacré à l'analyse juridique des technologies émergentes, avec un regard particulier sur le Cameroun, l'Afrique et l'espace OHADA.</p><p>La plateforme associe recherche doctrinale, vulgarisation, formation, publication et veille stratégique.</p></div></section>
-<section id="contact" class="section contact"><div><p class="ey">CONTACT</p><h2>Recherche, conférence, formation ou partenariat.</h2><p>Utilisez le formulaire pour préparer un message professionnel. Le site ouvrira votre application e-mail pour l'envoi.</p></div><form id="contactForm"><input required name="name" placeholder="Nom et prénom"><input required type="email" name="email" placeholder="Adresse e-mail"><select name="subject"><option>Publication / recherche</option><option>Formation</option><option>Conférence</option><option>Partenariat</option><option>Autre</option></select><textarea required name="message" rows="6" placeholder="Votre message"></textarea><button class="btn primary" type="submit">Préparer le message</button><div id="status" class="status"></div></form></section>
-</main>
-<footer><div class="footin"><div><a class="brand" href="#accueil"><span class="mark">DD</span>DOURAM DIGITAL LAW</a><div style="margin-top:12px;font-size:13px">Droit numérique • Blockchain • Web3 • Quantum</div></div><div class="footlinks"><a href="#domaines">Domaines</a><a href="#publications">Publications</a><a href="#contact">Contact</a></div></div></footer>
-<script>
-const menu=document.querySelector('.menu'),links=document.querySelector('.links');menu.addEventListener('click',()=>links.classList.toggle('open'));document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
-document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget);const s=encodeURIComponent('[DOURAM DIGITAL LAW] '+d.get('subject'));const b=encodeURIComponent('Nom: '+d.get('name')+'\nEmail: '+d.get('email')+'\n\n'+d.get('message'));document.getElementById('status').textContent='Ouverture de votre application e-mail…';window.location.href='mailto:contact@douramdigital.law?subject='+s+'&body='+b});
-</script>
-</body></html>
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="nav">
+  <div class="container nav-inner">
+
+    <a href="#accueil" class="brand">
+      <span class="logo">DD</span>
+      <span>DOURAM DIGITAL LAW</span>
+    </a>
+
+    <button class="menu" aria-label="Menu">☰</button>
+
+    <nav class="links">
+      <a href="#accueil">Accueil</a>
+      <a href="#domaines">Domaines</a>
+      <a href="#publications">Publications</a>
+      <a href="#recherche">Recherche</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- ================= ACCUEIL ================= -->
+
+<section id="accueil" class="hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        Droit • Technologie • Innovation
+      </div>
+
+      <h1>
+        Le droit face aux
+        <span>technologies émergentes.</span>
+      </h1>
+
+      <p class="hero-text">
+        DOURAM DIGITAL LAW est une plateforme de recherche,
+        de formation et de veille consacrée au droit numérique,
+        à la Blockchain, aux actifs numériques, au Web3,
+        à la cybersécurité et aux technologies émergentes.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#publications">
+          Explorer les publications
+        </a>
+
+        <a class="btn btn-outline" href="#contact">
+          Proposer une collaboration
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="hero-panel">
+
+      <div class="eyebrow">
+        OBSERVATOIRE
+      </div>
+
+      <h2 class="panel-title">
+        Digital Law & Emerging Technology
+      </h2>
+
+      <p class="panel-small">
+        Cameroun • Afrique • OHADA • Monde
+      </p>
+
+      <div class="network">
+        <div class="node">DROIT</div>
+        <div class="node">IA</div>
+        <div class="node">WEB3</div>
+        <div class="node">OHADA</div>
+        <div class="node">BLOCKCHAIN</div>
+        <div class="node">CYBER</div>
+      </div>
+
+      <p class="panel-small">
+        Analyse juridique • Prospective • Innovation
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CHIFFRES ================= -->
+
+<section class="band">
+
+  <div class="container band-grid">
+
+    <div class="metric">
+      <strong>05</strong>
+      <span>Axes stratégiques</span>
+    </div>
+
+    <div class="metric">
+      <strong>OHADA</strong>
+      <span>Droit des affaires</span>
+    </div>
+
+    <div class="metric">
+      <strong>Web3</strong>
+      <span>Économie numérique</span>
+    </div>
+
+    <div class="metric">
+      <strong>IA</strong>
+      <span>Technologies émergentes</span>
+    </div>
+
+    <div class="metric">
+      <strong>24/7</strong>
+      <span>Veille numérique</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= DOMAINES ================= -->
+
+<section id="domaines" class="section">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-kicker">
+        Domaines d'expertise
+      </div>
+
+      <h2>
+        Comprendre le droit de l'économie numérique.
+      </h2>
+
+      <p class="section-intro">
+        Une approche à la croisée du droit, de la technologie,
+        de la recherche scientifique et de l'innovation.
+      </p>
+
+    </div>
+
+
+    <div class="domain-grid">
+
+      <article class="domain-card">
+        <div class="icon">⚖</div>
+        <h3>Droit numérique</h3>
+        <p>
+          Données personnelles, contrats numériques,
+          preuve électronique, responsabilité et régulation.
+        </p>
+      </article>
+
+
+      <article class="domain-card">
+        <div class="icon">◈</div>
+        <h3>Blockchain</h3>
+        <p>
+          Technologie des registres distribués,
+          smart contracts, gouvernance et sécurisation.
+        </p>
+      </article>
+
+
+      <article class="domain-card">
+        <div class="icon">◎</div>
+        <h3>Actifs numériques</h3>
+        <p>
+          Cryptoactifs, tokenisation, propriété numérique
+          et enjeux juridiques des nouveaux actifs.
+        </p>
+      </article>
+
+
+      <article class="domain-card">
+        <div class="icon">⬡</div>
+        <h3>Web3</h3>
+        <p>
+          DAO, identité numérique, décentralisation,
+          économie des plateformes et nouveaux modèles.
+        </p>
+      </article>
+
+
+      <article class="domain-card">
+        <div class="icon">⌁</div>
+        <h3>Cybersécurité</h3>
+        <p>
+          Sécurité des systèmes, cybercriminalité,
+          gouvernance des risques et conformité.
+        </p>
+      </article>
+
+
+      <article class="domain-card">
+        <div class="icon">AI</div>
+        <h3>Intelligence artificielle</h3>
+        <p>
+          Responsabilité algorithmique, IA générative,
+          données, propriété intellectuelle et régulation.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= PUBLICATIONS ================= -->
+
+<section id="publications" class="section publications">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-kicker">
+        Publications & recherche
+      </div>
+
+      <h2>
+        Décrypter les transformations avant qu'elles ne deviennent des normes.
+      </h2>
+
+      <p class="section-intro">
+        Analyses juridiques, articles scientifiques,
+        commentaires et travaux prospectifs sur les technologies émergentes.
+      </p>
+
+    </div>
+
+
+    <div class="pub-grid">
+
+
+      <!-- PUBLICATION 1 -->
+
+      <article class="pub-card">
+
+        <img
+          class="pub-image"
+          src="images/file_0000000046d881f4a9417ebfb7b901a0.png"
+          alt="Blockchain et sécurisation des registres de commerce dans l'espace OHADA">
+
+        <div class="pub-body">
+
+          <div class="tag">
+            Droit numérique • OHADA • Blockchain
+          </div>
+
+          <h3>
+            Blockchain et sécurisation des registres de commerce dans l'espace OHADA
+          </h3>
+
+          <p>
+            Recherche juridique et prospective sur l'utilisation
+            des registres distribués pour renforcer la sécurité,
+            la transparence et la traçabilité des informations commerciales.
+          </p>
+
+          <a class="read" href="blockchain-ohada.html">
+            Lire la publication →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <!-- PUBLICATION 2 -->
+
+      <article class="pub-card">
+
+        <div
+          class="pub-image"
+          style="display:grid;place-items:center;color:#55d8ca;font-size:50px;">
+          ⚖
+        </div>
+
+        <div class="pub-body">
+
+          <div class="tag">
+            Droit des TIC
+          </div>
+
+          <h3>
+            Le droit face aux technologies émergentes
+          </h3>
+
+          <p>
+            Réflexions sur l'adaptation des systèmes juridiques
+            face à l'intelligence artificielle, au Web3,
+            aux actifs numériques et à la transformation numérique.
+          </p>
+
+          <a class="read" href="#contact">
+            Publication à venir →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= RECHERCHE ================= -->
+
+<section id="recherche" class="section">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="section-kicker">
+        Recherche scientifique
+      </div>
+
+      <h2>
+        Construire une doctrine juridique adaptée à l'ère numérique.
+      </h2>
+
+      <p class="section-intro">
+        DOURAM DIGITAL LAW entend contribuer à la réflexion
+        juridique sur les mutations technologiques en Afrique
+        et dans l'espace OHADA.
+      </p>
+
+    </div>
+
+
+    <div class="research-grid">
+
+      <div class="research-card">
+
+        <h3>Recherche juridique</h3>
+
+        <p>
+          Études doctrinales, analyses de textes,
+          jurisprudence, propositions normatives et
+          recherches interdisciplinaires.
+        </p>
+
+      </div>
+
+
+      <div class="research-card">
+
+        <h3>Prospective réglementaire</h3>
+
+        <p>
+          Anticiper les transformations technologiques
+          et identifier les réponses juridiques nécessaires
+          à leur encadrement.
+        </p>
+
+      </div>
+
+
+      <div class="research-card">
+
+        <h3>Formation</h3>
+
+        <p>
+          Modules et ressources pédagogiques consacrés
+          au droit numérique, à la Blockchain,
+          au Web3 et aux technologies émergentes.
+        </p>
+
+      </div>
+
+
+      <div class="research-card">
+
+        <h3>Veille technologique</h3>
+
+        <p>
+          Suivi des innovations, évolutions réglementaires,
+          tendances technologiques et nouveaux modèles
+          économiques numériques.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= À PROPOS ================= -->
+
+<section id="apropos" class="section profile">
+
+  <div class="container profile-grid">
+
+
+    <div class="profile-box">
+
+      <div class="profile-initial">
+        DV
+      </div>
+
+      <h3>
+        Dr. DOURAM Victor
+      </h3>
+
+      <p>
+        Docteur en droit des affaires
+      </p>
+
+      <br>
+
+      <p>
+        Chercheur en droit du numérique,
+        droit des actifs numériques et Blockchain.
+      </p>
+
+      <br>
+
+      <p>
+        Architecte juridique Web3
+      </p>
+
+    </div>
+
+
+    <div class="profile-text">
+
+      <div class="section-kicker">
+        À propos
+      </div>
+
+      <h2>
+        Une recherche juridique tournée vers l'avenir.
+      </h2>
+
+      <p>
+        DOURAM DIGITAL LAW est conçu comme un espace
+        de réflexion consacré aux interactions entre
+        le droit, l'innovation technologique et
+        la transformation des modèles économiques.
+      </p>
+
+      <p>
+        La plateforme explore notamment les enjeux
+        juridiques de la Blockchain, des actifs numériques,
+        du Web3, de l'intelligence artificiell
