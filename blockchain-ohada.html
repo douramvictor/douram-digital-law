@@ -4,102 +4,201 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Blockchain et sécurisation des registres de commerce dans l'espace OHADA</title>
+<title>Blockchain et sécurisation des registres de commerce dans l’espace OHADA | Dr. DOURAM Victor</title>
 
-<meta name="description" content="Étude juridique et prospective de Dr. DOURAM Victor sur la blockchain et la sécurisation des registres de commerce dans l'espace OHADA.">
+<meta name="description"
+content="Étude juridique et prospective de Dr. DOURAM Victor sur l’utilisation de la blockchain pour renforcer la sécurité, la traçabilité et la fiabilité des registres de commerce dans l’espace OHADA.">
 
 <style>
+:root{
+    --navy:#07111f;
+    --teal:#13b8a6;
+    --light:#f5f7fa;
+    --white:#ffffff;
+    --text:#172033;
+    --muted:#647084;
+    --line:#dfe5ec;
+}
+
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
-    font-family:Arial,sans-serif;
-    background:#f5f7fa;
-    color:#07111f;
-    line-height:1.7;
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.8;
 }
 
 header{
-    background:#07111f;
+    background:var(--navy);
     color:white;
-    padding:35px 20px;
+    padding:25px 20px;
 }
 
-header h1{
-    max-width:900px;
+.header-inner{
+    max-width:1100px;
     margin:auto;
-    font-size:28px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:800;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:var(--teal);
 }
 
 main{
-    max-width:900px;
-    margin:40px auto;
-    padding:0 20px;
+    max-width:1050px;
+    margin:auto;
+    padding:35px 18px 70px;
 }
 
-.categorie{
-    color:#11b5a4;
-    font-weight:bold;
-    text-transform:uppercase;
+.breadcrumb{
+    color:var(--teal);
+    font-weight:700;
     letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:13px;
+    margin-bottom:20px;
 }
 
-h2{
-    font-size:36px;
-    line-height:1.2;
+h1{
+    font-size:clamp(34px,6vw,62px);
+    line-height:1.08;
+    margin:10px 0 25px;
+    color:var(--navy);
 }
 
-h3{
-    margin-top:35px;
-    font-size:24px;
-}
-
-.auteur{
+.author{
     background:white;
-    padding:25px;
-    border-left:5px solid #11b5a4;
-    margin:30px 0;
+    border-left:6px solid var(--teal);
+    padding:22px 25px;
+    margin-bottom:30px;
+    box-shadow:0 10px 30px rgba(7,17,31,.06);
 }
 
-.resume{
-    background:#07111f;
+.author strong{
+    display:block;
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+.author p{
+    margin:4px 0;
+    color:var(--muted);
+}
+
+.article-image{
+    margin:30px 0;
+    background:white;
+    padding:10px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(7,17,31,.12);
+}
+
+.article-image img{
+    width:100%;
+    display:block;
+    border-radius:12px;
+}
+
+.caption{
+    text-align:center;
+    color:var(--muted);
+    font-size:13px;
+    padding:10px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    margin:28px 0;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgba(7,17,31,.05);
+}
+
+.card h2{
+    color:var(--navy);
+    margin-top:0;
+}
+
+.keywords{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.keyword{
+    background:#e8faf7;
+    color:#087f72;
+    padding:7px 12px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.extrait{
+    border-left:4px solid var(--teal);
+    padding-left:20px;
+}
+
+.locked{
+    background:var(--navy);
     color:white;
     padding:30px;
-    border-radius:12px;
-}
-
-.motscles{
-    margin:25px 0;
-    font-weight:bold;
-}
-
-.notice{
-    background:#e9f7f5;
-    padding:25px;
-    border-radius:12px;
+    border-radius:18px;
     margin-top:35px;
 }
 
-.bibliographie{
-    background:white;
-    padding:25px;
-    border-radius:12px;
+.locked h2{
+    margin-top:0;
+    color:white;
 }
 
-.retour{
+.btn{
     display:inline-block;
-    margin-top:35px;
-    padding:14px 20px;
-    background:#07111f;
+    margin-top:15px;
+    padding:13px 20px;
+    background:var(--teal);
     color:white;
     text-decoration:none;
-    border-radius:10px;
+    border-radius:9px;
+    font-weight:700;
+}
+
+.bibliography li{
+    margin-bottom:10px;
 }
 
 footer{
-    margin-top:60px;
-    background:#07111f;
-    color:white;
+    background:var(--navy);
+    color:#cbd5e1;
+    padding:35px 20px;
     text-align:center;
-    padding:30px 20px;
+}
+
+footer strong{
+    color:white;
+}
+
+@media(max-width:600px){
+    main{
+        padding:25px 14px 50px;
+    }
+
+    .card{
+        padding:21px;
+    }
+
+    h1{
+        font-size:38px;
+    }
 }
 </style>
 </head>
@@ -107,189 +206,217 @@ footer{
 <body>
 
 <header>
-<h1>DOU­RAM DIGITAL LAW</h1>
+    <div class="header-inner">
+        <div class="logo">
+            DOURAM <span>DIGITAL LAW</span>
+        </div>
+    </div>
 </header>
 
 <main>
 
-<div class="categorie">Droit numérique • OHADA • Blockchain</div>
+    <div class="breadcrumb">
+        Droit numérique • OHADA • Blockchain
+    </div>
 
-<h2>
-Blockchain et sécurisation des registres de commerce dans l'espace OHADA
-</h2>
+    <h1>
+        Blockchain et sécurisation des registres de commerce dans l’espace OHADA
+    </h1>
 
-<div class="auteur">
-<strong>Dr. DOURAM Victor</strong><br>
-Docteur en droit des affaires<br>
-Chercheur en droit du numérique, droit des actifs numériques et de la Blockchain<br>
-Architecte juridique Web3
-</div>
+    <section class="author">
+        <strong>Dr. DOURAM Victor</strong>
+        <p>Docteur en droit des affaires</p>
+        <p>Chercheur en droit du numérique, droit des actifs numériques et de la Blockchain</p>
+        <p>Architecte juridique Web3</p>
+    </section>
 
-<div class="resume">
+    <figure class="article-image">
+        <img
+            src="images/file_0000000046d881f4a9417ebfb7b901a0.png"
+            alt="Blockchain et sécurisation des registres de commerce dans l’espace OHADA">
+        <figcaption class="caption">
+            Blockchain, registre de commerce et sécurité juridique dans l’espace OHADA —
+            Illustration éditoriale, DOURAM DIGITAL LAW.
+        </figcaption>
+    </figure>
 
-<h3>Résumé</h3>
+    <section class="card">
+        <h2>Résumé</h2>
 
-<p>
-La transformation numérique des activités économiques conduit à repenser
-les mécanismes traditionnels d'enregistrement, de conservation et de
-circulation de l'information juridique. Dans l'espace OHADA, les registres
-de commerce occupent une place essentielle dans la sécurisation des
-activités économiques et dans l'identification juridique des entreprises.
-</p>
+        <p>
+            La transformation numérique des activités économiques conduit à repenser
+            les mécanismes traditionnels de création, de conservation, de transmission
+            et de consultation de l’information juridique et commerciale.
+        </p>
 
-<p>
-La technologie blockchain pourrait offrir de nouvelles possibilités en
-matière d'intégrité, de traçabilité, d'horodatage et de sécurisation des
-données enregistrées. Toutefois, son intégration dans les mécanismes
-juridiques OHADA soulève des questions relatives à la gouvernance, à la
-preuve, à la protection des données, à l'autorité institutionnelle et à
-l'interopérabilité des systèmes.
-</p>
+        <p>
+            Dans l’espace OHADA, les registres de commerce occupent une place
+            déterminante dans la sécurité juridique des activités économiques.
+            La blockchain pourrait offrir de nouvelles possibilités en matière
+            d’intégrité, de traçabilité et de disponibilité des données.
+        </p>
 
-</div>
+        <p>
+            Cette étude examine toutefois cette technologie avec prudence :
+            son intérêt juridique ne résulte pas de la seule innovation technique,
+            mais de sa capacité à s’intégrer dans un cadre institutionnel,
+            juridique et technique cohérent.
+        </p>
+    </section>
 
-<div class="motscles">
-Mots-clés : Blockchain — OHADA — RCCM — Registre du commerce —
-preuve numérique — gouvernance — cybersécurité — transformation numérique
-</div>
+    <section class="card">
+        <h2>Mots-clés</h2>
 
-<h3>Introduction</h3>
+        <div class="keywords">
+            <span class="keyword">Blockchain</span>
+            <span class="keyword">OHADA</span>
+            <span class="keyword">RCCM</span>
+            <span class="keyword">Droit numérique</span>
+            <span class="keyword">Registre de commerce</span>
+            <span class="keyword">Sécurité juridique</span>
+            <span class="keyword">Traçabilité</span>
+            <span class="keyword">Web3</span>
+        </div>
+    </section>
 
-<p>
-L'essor des technologies distribuées transforme progressivement les
-modes traditionnels de conservation et de circulation de l'information.
-La blockchain apparaît, dans ce contexte, comme une infrastructure
-susceptible de modifier profondément certaines pratiques administratives,
-commerciales et juridiques.
-</p>
+    <section class="card">
+        <h2>Introduction</h2>
 
-<p>
-Dans l'espace OHADA, cette évolution présente un intérêt particulier.
-Le Registre du Commerce et du Crédit Mobilier constitue un instrument
-central de publicité légale et de sécurité juridique des affaires.
-La question n'est donc pas simplement de savoir si la blockchain peut
-être utilisée, mais de déterminer dans quelles conditions son intégration
-pourrait être juridiquement pertinente.
-</p>
+        <p>
+            La numérisation de l’économie transforme profondément les rapports
+            entre les acteurs économiques, les administrations et les institutions
+            chargées de garantir la sécurité juridique des opérations commerciales.
+        </p>
 
-<h3>Problématique</h3>
+        <p>
+            Le registre de commerce constitue à cet égard un instrument essentiel.
+            Il permet notamment de centraliser et de rendre accessibles certaines
+            informations relatives aux entreprises et aux acteurs économiques.
+        </p>
 
-<p>
-Dans quelle mesure l'intégration de la technologie blockchain dans les
-registres de commerce de l'espace OHADA pourrait-elle renforcer la
-sécurité juridique des activités économiques sans remettre en cause les
-principes de compétence, de gouvernance et de responsabilité des
-institutions chargées de leur gestion ?
-</p>
+        <p>
+            L’apparition des technologies de registre distribué, communément
+            désignées sous le terme de blockchain, ouvre une réflexion nouvelle :
+            peut-on utiliser une infrastructure distribuée pour renforcer
+            l'intégrité et la traçabilité des informations commerciales sans
+            remettre en cause les compétences des autorités légalement habilitées ?
+        </p>
+    </section>
 
-<h3>1. La blockchain comme outil de sécurisation</h3>
+    <section class="card">
+        <h2>I. La blockchain comme outil potentiel de sécurisation</h2>
 
-<p>
-La blockchain présente plusieurs caractéristiques susceptibles d'intéresser
-le droit des affaires : enregistrement distribué, traçabilité des
-opérations, horodatage et résistance à certaines formes d'altération
-des données.
-</p>
+        <div class="extrait">
 
-<p>
-Appliquées aux registres de commerce, ces caractéristiques pourraient
-contribuer à renforcer la fiabilité des informations relatives aux
-entreprises, aux inscriptions et aux modifications enregistrées.
-</p>
+            <p>
+                La blockchain présente plusieurs caractéristiques susceptibles
+                d'intéresser le droit des affaires : enregistrement chronologique
+                des opérations, traçabilité des modifications et mécanismes
+                cryptographiques permettant de renforcer l'intégrité des données.
+            </p>
 
-<h3>2. Les limites juridiques d'une intégration technologique</h3>
+            <p>
+                Dans le domaine des registres commerciaux, ces caractéristiques
+                pourraient contribuer à améliorer la fiabilité de certaines
+                informations et à faciliter la vérification de leur historique.
+            </p>
 
-<p>
-La technologie ne saurait cependant se substituer à l'institution
-juridique. La valeur d'une donnée enregistrée sur une blockchain dépend
-du cadre normatif qui lui reconnaît une portée juridique.
-</p>
+        </div>
 
-<p>
-L'intégration d'un registre distribué devrait ainsi être accompagnée
-d'une réflexion sur la preuve électronique, la responsabilité des
-acteurs, la protection des données, la gouvernance du réseau et
-l'articulation avec les règles OHADA existantes.
-</p>
+        <p>
+            Toutefois, une distinction fondamentale doit être opérée entre
+            <strong>l’intégrité technique d’une donnée</strong> et
+            <strong>sa validité juridique</strong>.
+        </p>
 
-<h3>3. Vers un registre de commerce augmenté par la technologie</h3>
+        <p>
+            Une information enregistrée dans une blockchain n'acquiert pas,
+            par le seul fait de cet enregistrement, une valeur juridique
+            supérieure à celle que lui reconnaît le droit applicable.
+        </p>
+    </section>
 
-<p>
-Une évolution progressive pourrait permettre d'expérimenter des
-infrastructures numériques sécurisées tout en maintenant l'autorité
-juridique des institutions compétentes. L'enjeu ne serait donc pas de
-remplacer le registre traditionnel, mais de construire progressivement
-un registre plus fiable, traçable et interopérable.
-</p>
+    <section class="card">
+        <h2>II. Les conditions juridiques d’une intégration dans l’espace OHADA</h2>
 
-<div class="notice">
+        <p>
+            L’intégration éventuelle de la blockchain dans les mécanismes
+            d’immatriculation et de publicité commerciale suppose donc une
+            réflexion dépassant la seule dimension technologique.
+        </p>
 
-<h3>Une recherche à poursuivre</h3>
+        <p>
+            Plusieurs questions doivent être examinées : l’identification
+            des autorités compétentes, la gouvernance des infrastructures,
+            la protection des données, la responsabilité en cas d’erreur,
+            la conservation des informations et l’articulation avec les
+            règles existantes du droit des sociétés et du droit commercial.
+        </p>
 
-<p>
-Cette publication constitue une présentation synthétique d'une recherche
-plus approfondie consacrée à la rencontre entre blockchain, droit des
-affaires et système OHADA.
-</p>
+        <p>
+            L’enjeu est ainsi de construire une architecture dans laquelle
+            l’innovation technologique demeure au service de la sécurité
+            juridique, et non l’inverse.
+        </p>
+    </section>
 
-<p>
-<strong>
-La version définitive de l'étude, comprenant l'ensemble des développements,
-références doctrinales, analyses juridiques et propositions prospectives,
-est conservée par l'auteur.
-</strong>
-</p>
+    <section class="locked">
+        <h2>Un aperçu d’une recherche plus vaste</h2>
 
-<p>
-Pour accéder à la version complète ou échanger avec l'auteur sur cette
-recherche, une prise de contact peut être envisagée.
-</p>
+        <p>
+            Cette publication présente volontairement un aperçu de l’analyse.
+            La version définitive développe notamment les enjeux institutionnels,
+            techniques et juridiques de l’intégration de la blockchain dans
+            les registres de commerce de l’espace OHADA.
+        </p>
 
-</div>
+        <p>
+            <strong>
+                La version intégrale de l’étude est disponible dans les travaux
+                de recherche de l’auteur.
+            </strong>
+        </p>
 
-<h3>Conclusion</h3>
+        <a class="btn" href="index.html">
+            ← Retour à DOURAM DIGITAL LAW
+        </a>
+    </section>
 
-<p>
-La blockchain ne doit pas être considérée comme une solution automatique
-à toutes les difficultés des registres de commerce. Elle constitue plutôt
-un outil technologique dont l'efficacité juridique dépendra de son
-intégration dans un cadre institutionnel, technique et normatif cohérent.
-</p>
+    <section class="card bibliography">
+        <h2>Bibliographie indicative</h2>
 
-<h3>Bibliographie indicative</h3>
+        <ul>
+            <li>
+                OHADA, Acte uniforme relatif au droit commercial général,
+                dispositions relatives au Registre du Commerce et du Crédit Mobilier.
+            </li>
 
-<div class="bibliographie">
+            <li>
+                OHADA, Acte uniforme relatif au droit des sociétés commerciales
+                et du groupement d’intérêt économique.
+            </li>
 
-<p>
-— OHADA, Acte uniforme relatif au droit commercial général.
-</p>
+            <li>
+                Nakamoto S., <em>Bitcoin: A Peer-to-Peer Electronic Cash System</em>,
+                2008.
+            </li>
 
-<p>
-— OHADA, textes relatifs au Registre du Commerce et du Crédit Mobilier.
-</p>
-
-<p>
-— Nakamoto S., <em>Bitcoin: A Peer-to-Peer Electronic Cash System</em>,
-2008.
-</p>
-
-<p>
-— Travaux doctrinaux relatifs à la blockchain, à la preuve électronique
-et à la transformation numérique du droit des affaires.
-</p>
-
-</div>
-
-<a class="retour" href="index.html">
-← Retour à DOURAM DIGITAL LAW
-</a>
+            <li>
+                Travaux et rapports consacrés à la blockchain, à la transformation
+                numérique du droit et à la gouvernance des données.
+            </li>
+        </ul>
+    </section>
 
 </main>
 
 <footer>
-<strong>Dr. DOURAM Victor</strong><br>
-Docteur en droit des affaires • Droit numérique • Blockchain • Web3
+    <strong>DOURAM DIGITAL LAW</strong>
+    <br>
+    Droit numérique • Technologie • Innovation
+    <br><br>
+    © Dr. DOURAM Victor
 </footer>
 
 </body>
-</html>
+    </html>
