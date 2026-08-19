@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Administration | DOURAM DIGITAL LAW</title>
+
+<style>
+:root{
+  --navy:#07111f;
+  --navy2:#0d1b2d;
+  --teal:#16b8a6;
+  --teal2:#20d4bd;
+  --white:#ffffff;
+  --muted:#9eacbd;
+  --line:#24354a;
+  --bg:#f4f7fa;
+  --danger:#dc3545;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:Inter,Arial,sans-serif;
+  background:var(--bg);
+  color:#172033;
+}
+
+header{
+  background:var(--navy);
+  color:white;
+  padding:20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:800;
+  letter-spacing:.5px;
+}
+
+.logo-mark{
+  width:45px;
+  height:45px;
+  border-radius:12px;
+  background:linear-gradient(135deg,var(--teal),#087f8f);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:900;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:30px 20px 60px;
+}
+
+.hero{
+  background:linear-gradient(135deg,var(--navy),var(--navy2));
+  color:white;
+  border-radius:22px;
+  padding:30px;
+  margin-bottom:25px;
+}
+
+.hero small{
+  color:var(--teal2);
+  font-weight:800;
+  letter-spacing:2px;
+}
+
+.hero h1{
+  margin:10px 0;
+  font-size:32px;
+}
+
+.hero p{
+  color:#bdc8d6;
+  line-height:1.7;
+}
+
+.card{
+  background:white;
+  border:1px solid #e0e6ed;
+  border-radius:18px;
+  padding:25px;
+  margin-bottom:25px;
+  box-shadow:0 8px 30px rgba(7,17,31,.06);
+}
+
+.card h2{
+  margin-top:0;
+  color:var(--navy);
+}
+
+label{
+  display:block;
+  margin:18px 0 7px;
+  font-weight:700;
+}
+
+input,textarea,select{
+  width:100%;
+  padding:14px;
+  border:1px solid #ccd5df;
+  border-radius:10px;
+  font-size:16px;
+  outline:none;
+}
+
+input:focus,textarea:focus,select:focus{
+  border-color:var(--teal);
+}
+
+textarea{
+  min-height:150px;
+  resize:vertical;
+}
+
+button{
+  border:0;
+  border-radius:10px;
+  padding:13px 20px;
+  font-size:16px;
+  font-weight:800;
+  cursor:pointer;
+}
+
+.primary{
+  background:var(--teal);
+  color:white;
+}
+
+.primary:hover{
+  background:#109c8e;
+}
+
+.secondary{
+  background:var(--navy);
+  color:white;
+}
+
+.danger{
+  background:var(--danger);
+  color:white;
+}
+
+.actions{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.publication{
+  border:1px solid #dfe5eb;
+  border-radius:14px;
+  padding:18px;
+  margin-top:15px;
+}
+
+.publication h3{
+  margin:0 0 8px;
+  color:var(--navy);
+}
+
+.badge{
+  display:inline-block;
+  background:#e4faf7;
+  color:#087f74;
+  padding:5px 9px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:800;
+}
+
+.empty{
+  color:#718096;
+  text-align:center;
+  padding:30px;
+}
+
+.notice{
+  background:#fff8e6;
+  border-left:5px solid #f0ad00;
+  padding:15px;
+  border-radius:8px;
+  line-height:1.6;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  color:#718096;
+}
+
+@media(max-width:650px){
+  .hero h1{
+    font-size:25px;
+  }
+
+  .container{
+    padding:20px 14px 40px;
+  }
+
+  .card{
+    padding:18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-mark">DD</div>
+    <span>DOURAM DIGITAL LAW</span>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="hero">
+  <small>ESPACE D'ADMINISTRATION</small>
+  <h1>Tableau de bord</h1>
+  <p>
+    Gestion des publications, recherches et contenus de
+    DOURAM DIGITAL LAW.
+  </p>
+</section>
+
+<div class="notice">
+  <strong>Étape de construction :</strong>
+  cette interface constitue la première partie du système
+  d'administration. La sécurisation et la publication automatique
+  seront ajoutées dans l'étape suivante.
+</div>
+
+<section class="card">
+  <h2>➕ Nouvelle publication</h2>
+
+  <label for="title">Titre de la publication</label>
+  <input
+    id="title"
+    type="text"
+    placeholder="Ex. Blockchain et sécurisation des registres de commerce"
+  >
+
+  <label for="category">Catégorie</label>
+  <select id="category">
+    <option>Droit numérique</option>
+    <option>Blockchain</option>
+    <option>OHADA</option>
+    <option>Web3</option>
+    <option>Cybersécurité</option>
+    <option>Intelligence artificielle</option>
+    <option>Informatique quantique</option>
+    <option>Recherche juridique</option>
+  </select>
+
+  <label for="description">Résumé</label>
+  <textarea
+    id="description"
+    placeholder="Présentez brièvement la publication..."
+  ></textarea>
+
+  <label for="content">Contenu</label>
+  <textarea
+    id="content"
+    placeholder="Écrivez ici le contenu de votre publication..."
+  ></textarea>
+
+  <div class="actions">
+    <button class="primary" onclick="savePublication()">
+      Enregistrer la publication
+    </button>
+
+    <button class="secondary" onclick="clearForm()">
+      Effacer
+    </button>
+  </div>
+</section>
+
+<section class="card">
+  <h2>📚 Mes publications</h2>
+
+  <div id="publicationList">
+    <div class="empty">
+      Aucune publication enregistrée pour le moment.
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  © 2026 DOURAM DIGITAL LAW — Droit • Technologie • Innovation
+</footer>
+
+<script>
+
+function getPublications(){
+  return JSON.parse(
+    localStorage.getItem("douram_publications") || "[]"
+  );
+}
+
+function savePublication(){
+
+  const title =
+    document.getElementById("title").value.trim();
+
+  const category =
+    document.getElementById("category").value;
+
+  const description =
+    document.getElementById("description").value.trim();
+
+  const content =
+    document.getElementById("content").value.trim();
+
+  if(!title || !description || !content){
+    alert("Veuillez remplir le titre, le résumé et le contenu.");
+    return;
+  }
+
+  const publications = getPublications();
+
+  publications.unshift({
+    id:Date.now(),
+    title:title,
+    category:category,
+    description:description,
+    content:content,
+    date:new Date().toLocaleDateString("fr-FR")
+  });
+
+  localStorage.setItem(
+    "douram_publications",
+    JSON.stringify(publications)
+  );
+
+  clearForm();
+
+  displayPublications();
+
+  alert("Publication enregistrée avec succès.");
+}
+
+function displayPublications(){
+
+  const publications = getPublications();
+
+  const container =
+    document.getElementById("publicationList");
+
+  if(publications.length === 0){
+
+    container.innerHTML = `
+      <div class="empty">
+        Aucune publication enregistrée pour le moment.
+      </div>
+    `;
+
+    return;
+  }
+
+  container.innerHTML = publications.map(pub => `
+
+    <article class="publication">
+
+      <span class="badge">
+        ${escapeHTML(pub.category)}
+      </span>
+
+      <h3>
+        ${escapeHTML(pub.title)}
+      </h3>
+
+      <p>
+        ${escapeHTML(pub.description)}
+      </p>
+
+      <small>
+        Publié le ${escapeHTML(pub.date)}
+      </small>
+
+      <div class="actions">
+
+        <button
+          class="danger"
+          onclick="deletePublication(${pub.id})">
+          Supprimer
+        </button>
+
+      </div>
+
+    </article>
+
+  `).join("");
+}
+
+function deletePublication(id){
+
+  if(!confirm("Voulez-vous vraiment supprimer cette publication ?")){
+    return;
+  }
+
+  let publications = getPublications();
+
+  publications =
+    publications.filter(pub => pub.id !== id);
+
+  localStorage.setItem(
+    "douram_publications",
+    JSON.stringify(publications)
+  );
+
+  displayPublications();
+}
+
+function clearForm(){
+
+  document.getElementById("title").value="";
+  document.getElementById("description").value="";
+  document.getElementById("content").value="";
+
+}
+
+function escapeHTML(text){
+
+  return text
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+
+}
+
+displayPublications();
+
+</script>
+
+</body>
+</html>
